@@ -21665,19 +21665,23 @@
 	          _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png" }),
 	          _react2.default.createElement(
 	            "div",
-	            null,
+	            { className: "single-project-info" },
 	            _react2.default.createElement(
-	              "h1",
+	              "h2",
 	              null,
-	              "Floorsurfing"
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://www.floorsurfing.com" },
+	                "Floorsurfing"
+	              )
 	            ),
 	            _react2.default.createElement(
-	              "span",
-	              null,
-	              "Full stack engineer, 2017"
+	              "h3",
+	              { className: "position" },
+	              "Full Stack Software Engineer, 2017"
 	            ),
 	            _react2.default.createElement(
-	              "span",
+	              "h3",
 	              null,
 	              "New York, NY"
 	            ),
