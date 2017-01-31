@@ -90,6 +90,13 @@ a {
   background-size: cover;
 }
 
+.photo {
+  width: 250px;
+  height: 350px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
 .projects {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -102,6 +109,16 @@ a {
   width: 270px;
   height: 220px;
   border-radius: 20%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.img-logo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .single-project {

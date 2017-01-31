@@ -21601,15 +21601,11 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "splash-section" },
+	        _react2.default.createElement("img", { className: "photo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485902385/Pic_nxhczh.jpg" }),
 	        _react2.default.createElement(
 	          "h1",
 	          null,
-	          "Brian Chen"
-	        ),
-	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "Software Engineer"
+	          "Hey, I'm Brian!"
 	        )
 	      );
 	    }
@@ -21659,6 +21655,9 @@
 	      this.forceUpdate();
 	    }
 	  }, {
+	    key: "handleClick",
+	    value: function handleClick(property) {}
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      debugger;
@@ -21673,7 +21672,11 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "single-project" },
-	          _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png" }),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "http://www.floorsurfing.com" },
+	            _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png" })
+	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "single-project-info" },
@@ -21701,7 +21704,11 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "single-project" },
-	          _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836137/Timeline-alt_becmvc.png" }),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://appetize.io/app/yc4q39f93rw4748dpuhumudgk4?device=iphone6s&scale=75&orientation=portrait&osVersion=9.3" },
+	            _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836137/Timeline-alt_becmvc.png" })
+	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "single-project-info" },
@@ -21729,7 +21736,11 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "single-project" },
-	          _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836938/SpaceInvaders-logo_zxxwed.png" }),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://brianchen.github.io/Space-Invaders/" },
+	            _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836938/SpaceInvaders-logo_zxxwed.png" })
+	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "single-project-info" },

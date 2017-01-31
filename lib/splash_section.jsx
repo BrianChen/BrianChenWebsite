@@ -9,8 +9,8 @@ class SplashSection extends React.Component {
   render() {
     return(
       <div className="splash-section">
-        <h1>Brian Chen</h1>
-        <h1>Software Engineer</h1>
+        <img className="photo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485902385/Pic_nxhczh.jpg"></img>
+        <h1>Hey, I'm Brian!</h1>
       </div>
     )
   }

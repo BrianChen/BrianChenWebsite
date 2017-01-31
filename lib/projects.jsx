@@ -10,13 +10,19 @@ class Projects extends React.Component {
     this.forceUpdate();
   }
 
+  handleClick(property) {
+
+  }
+
   render() {
     debugger;
     return(
       <div className="projects">
         <h1>Bringing ideas to life</h1>
         <div className="single-project">
-          <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png"></img>
+          <a href="http://www.floorsurfing.com">
+            <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png"></img>
+          </a>
           <div className="single-project-info">
             <h2><a href="http://www.floorsurfing.com">Floorsurfing</a></h2>
             <h3 className="technology">JavaScript • ReactJS • Redux • Ruby on Rails</h3>
@@ -24,7 +30,9 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className="single-project">
-          <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836137/Timeline-alt_becmvc.png"></img>
+          <a href="https://appetize.io/app/yc4q39f93rw4748dpuhumudgk4?device=iphone6s&scale=75&orientation=portrait&osVersion=9.3">
+            <img className="img-logo"  src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836137/Timeline-alt_becmvc.png"></img>
+          </a>
           <div className="single-project-info">
             <h2><a href="https://appetize.io/app/yc4q39f93rw4748dpuhumudgk4?device=iphone6s&scale=75&orientation=portrait&osVersion=9.3">Timeline</a></h2>
             <h3 className="technology">React Native • JavaScript • Firebase</h3>
@@ -32,7 +40,9 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className="single-project">
-          <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836938/SpaceInvaders-logo_zxxwed.png"></img>
+          <a href="https://brianchen.github.io/Space-Invaders/">
+            <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836938/SpaceInvaders-logo_zxxwed.png"></img>
+          </a>
           <div className="single-project-info">
             <h2><a href="https://brianchen.github.io/Space-Invaders/">Space Invaders</a></h2>
             <h3 className="technology">JavaScript • jQuery • CreateJS</h3>
