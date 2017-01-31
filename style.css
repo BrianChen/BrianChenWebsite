@@ -108,7 +108,7 @@ a {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 1000px;
 }
 
 .single-project-info {
@@ -116,6 +116,15 @@ a {
   width: auto;
 }
 
+.single-project-info p {
+  padding-top: 10px;
+}
+
 .position {
+  padding-top: 5px;
   color: green;
+}
+
+.location {
+  padding-top: 3px;
 }

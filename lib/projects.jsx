@@ -15,7 +15,7 @@ class Projects extends React.Component {
           <div className="single-project-info">
             <h2><a href="http://www.floorsurfing.com">Floorsurfing</a></h2>
             <h3 className="position">Full Stack Software Engineer, 2017</h3>
-            <h3>New York, NY</h3>
+            <h3 className="location">New York, NY</h3>
             <p>Floorsurfing is a full-stack web application that was inspired by Couchsurfing. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.</p>
           </div>
         </div>

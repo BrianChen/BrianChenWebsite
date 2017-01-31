@@ -21682,7 +21682,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "h3",
-	              null,
+	              { className: "location" },
 	              "New York, NY"
 	            ),
 	            _react2.default.createElement(
