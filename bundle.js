@@ -21677,18 +21677,69 @@
 	            ),
 	            _react2.default.createElement(
 	              "h3",
-	              { className: "position" },
-	              "Full Stack Software Engineer, 2017"
-	            ),
-	            _react2.default.createElement(
-	              "h3",
-	              { className: "location" },
-	              "New York, NY"
+	              { className: "technology" },
+	              "JavaScript, React, Ruby on Rails"
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
 	              "Floorsurfing is a full-stack web application that was inspired by Couchsurfing. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend."
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "single-project" },
+	          _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836137/Timeline-alt_becmvc.png" }),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "single-project-info" },
+	            _react2.default.createElement(
+	              "h2",
+	              null,
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://appetize.io/app/yc4q39f93rw4748dpuhumudgk4?device=iphone6s&scale=75&orientation=portrait&osVersion=9.3" },
+	                "Timeline"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "technology" },
+	              "React Native, JavaScript, Firebase"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Timeline is journal/diary application that allows users to record, delete and edit existing entries. The data is securely persisted onto a cloud base database. Timeline was implemented with React Native for component rendering and Firebase as the database."
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "single-project" },
+	          _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485836938/SpaceInvaders-logo_zxxwed.png" }),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "single-project-info" },
+	            _react2.default.createElement(
+	              "h2",
+	              null,
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://brianchen.github.io/Space-Invaders/" },
+	                "Space Invaders"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "technology" },
+	              "JavaScript, jQuery, CreateJS"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Space Invaders is a Japanese shooting video game released in 1978 by Taito. It became a huge success after it's release and has had many updates and remake since then. I implemented this using the same mechanics to provide that original feel to the game."
 	            )
 	          )
 	        )
