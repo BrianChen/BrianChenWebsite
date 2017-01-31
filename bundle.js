@@ -21523,6 +21523,10 @@
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
+	var _footer = __webpack_require__(181);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21547,7 +21551,8 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_splash_section2.default, null),
-	        _react2.default.createElement(_projects2.default, null)
+	        _react2.default.createElement(_projects2.default, null),
+	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
 	  }]);
@@ -21751,6 +21756,83 @@
 	}(_react2.default.Component);
 	
 	exports.default = Projects;
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_React$Component) {
+	  _inherits(Footer, _React$Component);
+	
+	  function Footer(props) {
+	    _classCallCheck(this, Footer);
+	
+	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+	  }
+	
+	  _createClass(Footer, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { id: "footer" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Let's get in touch"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "footer-links" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://www.linkedin.com/in/brian-chen-b49a4553" },
+	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839056/In-2CRev-121px-R_fyfynz.png" })
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/BrianChen" },
+	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485838792/GitHub-Mark-120px-plus_yncggy.png" })
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "mailto:brianc.cb@gmail.com?Subject=Hello" },
+	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839432/logo_gmail_128px_qkqq96.png" })
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "mailto:brianc.cb@gmail.com?Subject=Hello" },
+	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485840169/resume-icon_k4kntx.png" })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Footer;
+	}(_react2.default.Component);
+	
+	exports.default = Footer;
 
 /***/ }
 /******/ ]);
