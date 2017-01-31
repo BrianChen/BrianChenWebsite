@@ -21654,8 +21654,14 @@
 	  }
 	
 	  _createClass(Projects, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      this.forceUpdate();
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
+	      debugger;
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "projects" },
@@ -21683,7 +21689,7 @@
 	            _react2.default.createElement(
 	              "h3",
 	              { className: "technology" },
-	              "JavaScript, React, Ruby on Rails"
+	              "JavaScript \u2022 ReactJS \u2022 Redux \u2022 Ruby on Rails"
 	            ),
 	            _react2.default.createElement(
 	              "p",
@@ -21711,7 +21717,7 @@
 	            _react2.default.createElement(
 	              "h3",
 	              { className: "technology" },
-	              "React Native, JavaScript, Firebase"
+	              "React Native \u2022 JavaScript \u2022 Firebase"
 	            ),
 	            _react2.default.createElement(
 	              "p",
@@ -21739,7 +21745,7 @@
 	            _react2.default.createElement(
 	              "h3",
 	              { className: "technology" },
-	              "JavaScript, jQuery, CreateJS"
+	              "JavaScript \u2022 jQuery \u2022 CreateJS"
 	            ),
 	            _react2.default.createElement(
 	              "p",
@@ -21807,22 +21813,22 @@
 	          _react2.default.createElement(
 	            "a",
 	            { href: "https://www.linkedin.com/in/brian-chen-b49a4553" },
-	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839056/In-2CRev-121px-R_fyfynz.png" })
+	            _react2.default.createElement("img", { className: "footer-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839056/In-2CRev-121px-R_fyfynz.png" })
 	          ),
 	          _react2.default.createElement(
 	            "a",
 	            { href: "https://github.com/BrianChen" },
-	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485838792/GitHub-Mark-120px-plus_yncggy.png" })
+	            _react2.default.createElement("img", { className: "footer-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485838792/GitHub-Mark-120px-plus_yncggy.png" })
 	          ),
 	          _react2.default.createElement(
 	            "a",
 	            { href: "mailto:brianc.cb@gmail.com?Subject=Hello" },
-	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839432/logo_gmail_128px_qkqq96.png" })
+	            _react2.default.createElement("img", { className: "footer-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839432/logo_gmail_128px_qkqq96.png" })
 	          ),
 	          _react2.default.createElement(
 	            "a",
 	            { href: "mailto:brianc.cb@gmail.com?Subject=Hello" },
-	            _react2.default.createElement("img", { src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485840169/resume-icon_k4kntx.png" })
+	            _react2.default.createElement("img", { className: "footer-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485840169/resume-icon_k4kntx.png" })
 	          )
 	        )
 	      );

@@ -80,14 +80,6 @@ a {
   color: #37c;
 }
 
-img {
-  width: 130px;
-  height: 130px;
-  background-size: cover;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 .splash-section {
   display: flex;
   flex-direction: column;
@@ -116,7 +108,7 @@ img {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 900px;
 }
 
 .single-project-info {
@@ -144,6 +136,15 @@ img {
 #footer h1 {
   margin-bottom: 20px;
 }
+
 .footer-links {
 
+}
+
+.footer-logo {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  padding-left: 5px;
+  padding-right: 5px;
 }
