@@ -1,3 +1,3 @@
 # BrianChenWebsite
 
-[www.brianccb.com](www.brianccb.com)
+[www.brianccb.com](http://www.brianccb.com)
