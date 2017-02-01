@@ -1,3 +1,3 @@
 # BrianChenWebsite
 
-[live]: https://brianchen.github.io/BrianChenWebsite/
+[www.brianc.cb.com](www.brianccb.com)
