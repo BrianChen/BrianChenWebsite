@@ -21822,7 +21822,7 @@
 	        _react2.default.createElement(
 	          "h1",
 	          null,
-	          "Let's get in touch"
+	          "Let's get in touch!"
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -21844,7 +21844,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "mailto:brianc.cb@gmail.com?Subject=Hello" },
+	            { href: "http://brianchen.github.io/BrianChenWebsite/Resume.pdf" },
 	            _react2.default.createElement("img", { className: "footer-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485840169/resume-icon_k4kntx.png" })
 	          )
 	        )

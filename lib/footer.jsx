@@ -9,7 +9,7 @@ class Footer extends React.Component {
   render() {
     return(
       <div id="footer" className="sections">
-        <h1>Let's get in touch</h1>
+        <h1>Let's get in touch!</h1>
         <div className="footer-links">
           <a href="https://www.linkedin.com/in/brian-chen-b49a4553">
             <img className="footer-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839056/In-2CRev-121px-R_fyfynz.png"></img>
@@ -20,7 +20,7 @@ class Footer extends React.Component {
           <a href="mailto:brianc.cb@gmail.com?Subject=Hello">
             <img className="footer-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839432/logo_gmail_128px_qkqq96.png"></img>
           </a>
-          <a href="mailto:brianc.cb@gmail.com?Subject=Hello">
+          <a href="http://brianchen.github.io/BrianChenWebsite/Resume.pdf">
             <img className="footer-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485840169/resume-icon_k4kntx.png"></img>
           </a>
         </div>
