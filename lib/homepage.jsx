@@ -2,6 +2,7 @@ import React from 'react';
 import SplashSection from './splash_section';
 import Projects from './projects';
 import Footer from './footer';
+import About from './about';
 
 class Homepage extends React.Component {
 
@@ -13,6 +14,7 @@ class Homepage extends React.Component {
     return (
       <div>
         <SplashSection/>
+        <About/>
         <Projects/>
         <Footer/>
       </div>
