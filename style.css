@@ -101,6 +101,10 @@ h3 {
   padding-top: 20px;
 }
 
+.photo ~ h1 {
+  color: white;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
