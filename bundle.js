@@ -21979,15 +21979,32 @@
 	      myFunction();
 	    }
 	  }, {
+	    key: "setImages",
+	    value: function setImages() {
+	      var imgs = [];
+	
+	      for (var i = 1; i < 11; i++) {
+	        var currentSrc = "images/picture" + i + ".jpg";
+	        imgs.push(_react2.default.createElement("img", { className: "gallery-img", src: currentSrc, key: currentSrc }));
+	      }
+	      console.log(imgs);
+	      return imgs;
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { id: "gallery" },
+	        { id: "gallery", className: "sections" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Code, Travel, Sleep and Repeat"
+	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "click1", onClick: this.handleClick },
-	          "click me"
+	          { className: "imgs-container" },
+	          this.setImages()
 	        )
 	      );
 	    }
