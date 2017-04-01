@@ -3,6 +3,7 @@ import SplashSection from './splash_section';
 import Projects from './projects';
 import Footer from './footer';
 import About from './about';
+import Gallery from './gallery';
 
 class Homepage extends React.Component {
 
@@ -16,6 +17,7 @@ class Homepage extends React.Component {
         <SplashSection/>
         <About/>
         <Projects/>
+        <Gallery/>
         <Footer/>
       </div>
     );

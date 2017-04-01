@@ -21531,6 +21531,10 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
+	var _gallery = __webpack_require__(183);
+	
+	var _gallery2 = _interopRequireDefault(_gallery);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21557,6 +21561,7 @@
 	        _react2.default.createElement(_splash_section2.default, null),
 	        _react2.default.createElement(_about2.default, null),
 	        _react2.default.createElement(_projects2.default, null),
+	        _react2.default.createElement(_gallery2.default, null),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
@@ -21907,17 +21912,17 @@
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating I got a job as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming such as Ruby and JavaScript."
+	            "I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating worked as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming languages such as Ruby and JavaScript."
 	          ),
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "After working for a year, I decided to purse software development full time.  I attended App Academy, an intensive coding school."
+	            "After working for a year, I decided to pursue software development full time.  I attended App Academy, an intensive coding school."
 	          ),
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "I enjoy working on challenging projects that gives me a chance to use what I have learned as well as diving into new technologies. I developed application that utilizes technologies such as Ruby on Rails, React-Redux, React Native and different databases. Some of these projects are shown below."
+	            "I enjoy working on challenging projects that gives me a chance to use what I have learned as well as diving into new technologies. I have developed applications that utilizes technologies such as Ruby on Rails, React-Redux, React Native and different databases. Some of these projects are shown below."
 	          )
 	        )
 	      );
@@ -21928,6 +21933,70 @@
 	}(_react2.default.Component);
 	
 	exports.default = About;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+	
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+	
+	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+	
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(Gallery, [{
+	    key: "handleClick",
+	    value: function handleClick() {
+	      function myFunction() {
+	        console.log(this);
+	      }
+	      myFunction();
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { id: "gallery" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "click1", onClick: this.handleClick },
+	          "click me"
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Gallery;
+	}(_react2.default.Component);
+	
+	exports.default = Gallery;
 
 /***/ }
 /******/ ]);
