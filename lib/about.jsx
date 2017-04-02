@@ -11,7 +11,7 @@ class About extends React.Component {
       <div id="about" className="sections">
         <h1>My journey as a Software Engineer</h1>
         <div className="about-content">
-          <p>I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating worked as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming languages such as Ruby and JavaScript.</p>
+          <p>I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating I worked as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming languages such as Ruby and JavaScript.</p>
 
           <p>After working for a year, I decided to pursue software development full time.  I attended App Academy, an intensive coding school.</p>
 

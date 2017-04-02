@@ -21912,7 +21912,7 @@
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating worked as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming languages such as Ruby and JavaScript."
+	            "I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating I worked as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming languages such as Ruby and JavaScript."
 	          ),
 	          _react2.default.createElement(
 	            "p",
@@ -21971,9 +21971,12 @@
 	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
 	
 	    _this.closeLightbox = _this.closeLightbox.bind(_this);
+	    _this.gotoNext = _this.gotoNext.bind(_this);
+	    _this.gotoPrevious = _this.gotoPrevious.bind(_this);
+	
 	    _this.state = {
 	      lightboxIsOpen: false,
-	      currentImageNumber: 0
+	      currentImageNumber: null
 	    };
 	    return _this;
 	  }
@@ -21995,7 +21998,6 @@
 	        var currentSrc = 'images/picture' + i + '.jpg';
 	        imgs.push(_react2.default.createElement('img', { className: 'gallery-img', src: currentSrc, onClick: this.handleClick.bind(this, i), key: i }));
 	      }
-	      console.log(imgs);
 	      return imgs;
 	    }
 	  }, {
@@ -22007,7 +22009,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Code, Travel, Sleep and Repeat'
+	          'Explore, Discover and Learn'
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -22027,14 +22029,31 @@
 	    }
 	  }, {
 	    key: 'gotoPrevious',
-	    value: function gotoPrevious() {}
+	    value: function gotoPrevious() {
+	      var imageNumber = this.state.currentImageNumber;
+	      if (imageNumber !== null) {
+	        this.setState({
+	          currentImageNumber: imageNumber -= 1
+	        });
+	      }
+	    }
 	  }, {
 	    key: 'gotoNext',
-	    value: function gotoNext() {}
+	    value: function gotoNext() {
+	      var imageNumber = this.state.currentImageNumber;
+	      if (imageNumber !== null) {
+	        this.setState({
+	          currentImageNumber: imageNumber += 1
+	        });
+	      }
+	    }
 	  }, {
 	    key: 'closeLightbox',
 	    value: function closeLightbox() {
-	      this.setState({ lightboxIsOpen: false });
+	      this.setState({
+	        lightboxIsOpen: false,
+	        currentImageNumber: null
+	      });
 	    }
 	  }]);
 	

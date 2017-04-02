@@ -7,9 +7,12 @@ class Gallery extends React.Component {
     super(props);
 
     this.closeLightbox = this.closeLightbox.bind(this);
+    this.gotoNext = this.gotoNext.bind(this);
+    this.gotoPrevious = this.gotoPrevious.bind(this);
+
     this.state = {
       lightboxIsOpen: false,
-      currentImageNumber: 0
+      currentImageNumber: null
     }
   }
 
@@ -27,14 +30,13 @@ class Gallery extends React.Component {
       let currentSrc = `images/picture${i}.jpg`;
       imgs.push(<img className="gallery-img" src={currentSrc} onClick={this.handleClick.bind(this, i)} key={i}></img>);
     }
-    console.log(imgs);
     return imgs;
   }
 
   render() {
     return (
       <div id="gallery" className="sections">
-        <h1>Code, Travel, Sleep and Repeat</h1>
+        <h1>Explore, Discover and Learn</h1>
         <div className="imgs-container">
           {this.setImages()}
         </div>
@@ -52,15 +54,28 @@ class Gallery extends React.Component {
   }
 
   gotoPrevious() {
-
+    let imageNumber = this.state.currentImageNumber;
+    if (imageNumber !== null) {
+      this.setState({
+        currentImageNumber: imageNumber -= 1
+      });
+    }
   }
 
   gotoNext() {
-
+    let imageNumber = this.state.currentImageNumber;
+    if (imageNumber !== null) {
+      this.setState({
+        currentImageNumber: imageNumber += 1
+      });
+    }
   }
 
   closeLightbox() {
-    this.setState({lightboxIsOpen: false});
+    this.setState({
+      lightboxIsOpen: false,
+      currentImageNumber: null
+    });
   }
 }
 
