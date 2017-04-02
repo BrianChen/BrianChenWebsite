@@ -220,6 +220,7 @@ h3 {
   opacity: 1;
   -webkit-animation: flash 1.5s;
   animation: flash 1.5s;
+  cursor: pointer;
 }
 
 @-webkit-keyframes flash {
