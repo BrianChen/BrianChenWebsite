@@ -20,9 +20,6 @@ class Footer extends React.Component {
           <a href="mailto:brianc.cb@gmail.com?Subject=Hello">
             <img className="footer-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485839432/logo_gmail_128px_qkqq96.png"></img>
           </a>
-          <a href="http://brianchen.github.io/BrianChenWebsite/Resume.pdf">
-            <img className="footer-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485840169/resume-icon_k4kntx.png"></img>
-          </a>
         </div>
       </div>
     )

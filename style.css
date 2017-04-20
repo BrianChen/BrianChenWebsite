@@ -80,6 +80,36 @@ h3 {
   margin-top: 100px;
 }
 
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  -moz-box-shadow:0 0 8px 0 black;
+  -webkit-box-shadow:0 0 12px 0 black;
+  box-shadow:0 0 8px 0 black;
+}
+
+.header-links {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+
+.header-links li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.header-links li:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
 .splash-section {
   display: flex;
   flex-direction: column;
