@@ -9,7 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <div id="about" className="sections">
-        <h1>My journey as a Software Engineer</h1>
+        <h1 className="section-title">My journey as a Software Engineer</h1>
         <div className="about-content">
           <p>I graduated from University at Buffalo with an Electrical Engineering degree.  After graduating I worked as a Technical Support Engineer for a enterprise start up to learn more about software all while teaching myself programming languages such as Ruby and JavaScript.</p>
 
