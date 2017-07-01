@@ -1,0 +1,77 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, h3, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small, img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Lato;
+  background-color: #FFFFFF;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing:border-box;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Application css */
+
+h1 {
+  font-size: 40px;
+  font-family: Lato;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Lato;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Lato;
+}

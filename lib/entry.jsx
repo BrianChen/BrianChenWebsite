@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Homepage from './homepage';
+import Homepage from './homepage/homepage';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");

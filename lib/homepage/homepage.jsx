@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './header';
-import SplashSection from './splash_section';
-import Projects from './projects';
-import Footer from './footer';
-import About from './about';
-import Gallery from './gallery';
+import Header from '../header/header';
+import SplashSection from '../splash/splash_section';
+import Projects from '../projects/projects';
+import Footer from '../footer/footer';
+import About from '../about/about';
+import Gallery from '../gallery/gallery';
 
 class Homepage extends React.Component {
 
@@ -14,7 +14,7 @@ class Homepage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="content">
         <SplashSection/>
         <About/>
         <Projects/>

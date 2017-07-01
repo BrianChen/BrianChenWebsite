@@ -1,0 +1,7 @@
+@import './reset.css';
+@import '../lib/homepage/homepage.css';
+@import '../lib/splash/splash.css';
+@import '../lib/about/about.css';
+@import '../lib/projects/projects.css';
+@import '../lib/gallery/gallery.css';
+@import '../lib/footer/footer.css';
