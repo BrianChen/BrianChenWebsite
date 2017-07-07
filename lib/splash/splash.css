@@ -27,9 +27,3 @@
     display: none;
   }
 }
-
-@media screen and (orientation: landscape) {
-  .splash-section {
-    background-color: green;
-  }
-}
