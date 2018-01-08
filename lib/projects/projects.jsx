@@ -16,7 +16,7 @@ class Projects extends React.Component {
         <h1 className="section-title">Bringing Ideas to Life</h1>
         <div className="single-project">
           <a href="http://www.floorsurfing.com">
-            <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png"></img>
+            <img className="img-logo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1515391317/Floorsurfing_jszy6a.png"></img>
           </a>
           <div className="single-project-info">
             <h2 className="project-title"><a href="http://www.floorsurfing.com">Floorsurfing</a></h2>
