@@ -5,6 +5,7 @@ import Projects from '../projects/projects';
 import Footer from '../footer/footer';
 import About from '../about/about';
 import Gallery from '../gallery/gallery';
+import Experience from '../experience/experience';
 
 class Homepage extends React.Component {
 
@@ -17,6 +18,7 @@ class Homepage extends React.Component {
       <div id="content">
         <SplashSection/>
         <About/>
+        <Experience/>
         <Projects/>
         <Gallery/>
         <Footer/>
