@@ -21771,7 +21771,7 @@
 	          _react2.default.createElement(
 	            "a",
 	            { href: "http://www.floorsurfing.com" },
-	            _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485547205/Splash_h4xwtc.png" })
+	            _react2.default.createElement("img", { className: "img-logo", src: "http://res.cloudinary.com/dxfjyn0nq/image/upload/v1515391317/Floorsurfing_jszy6a.png" })
 	          ),
 	          _react2.default.createElement(
 	            "div",
