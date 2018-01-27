@@ -31,6 +31,26 @@ h2 span {
   font-size: 30px;
 }
 
+.learn-more {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 215px;
+  font-size: 19px;
+  bottom: 6%;
+  opacity: 0.5;
+  color: white;
+}
+
+.scroll-anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+}
+
 .particles-wrapper {
   /* position: absolute; */
   height: 100vh;

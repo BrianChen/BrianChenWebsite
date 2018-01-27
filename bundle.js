@@ -21690,6 +21690,10 @@
 	
 	var _particlesjsConfigStars = __webpack_require__(256);
 	
+	var _reactScrollchor = __webpack_require__(259);
+	
+	var _reactScrollchor2 = _interopRequireDefault(_reactScrollchor);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21733,7 +21737,7 @@
 	              null,
 	              'Brian Chen'
 	            ),
-	            ', a detail oritented developer with a passion for problem solving. Using my skills to bring ideas to life.'
+	            ', a developer with a passion for problem solving. I enjoy learning new technology to bring ideas to life.'
 	          ),
 	          _react2.default.createElement(
 	            'h2',
@@ -21745,6 +21749,23 @@
 	              color: '#ffcc66',
 	              pause: 2000
 	            })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'learn-more' },
+	          _react2.default.createElement(
+	            _reactScrollchor2.default,
+	            {
+	              to: '#about-section',
+	              className: 'scroll-anchor'
+	            },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Learn more about what I do'
+	            ),
+	            _react2.default.createElement('i', { className: 'fa fa-caret-down', 'aria-hidden': 'true' })
 	          )
 	        ),
 	        _react2.default.createElement(_reactParticlesJs2.default, {
@@ -30360,7 +30381,7 @@
 	      }
 	    },
 	    "color": {
-	      "value": "#ffffff"
+	      "value": "#A0A0A0"
 	    },
 	    "shape": {
 	      "type": "circle",
@@ -30460,6 +30481,464 @@
 	  },
 	  "retina_detect": true
 	};
+
+/***/ }),
+/* 257 */,
+/* 258 */,
+/* 259 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(182);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	var _utils = __webpack_require__(260);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Scrollchor = function (_React$Component) {
+	  _inherits(Scrollchor, _React$Component);
+	
+	  function Scrollchor(props) {
+	    _classCallCheck(this, Scrollchor);
+	
+	    var _this = _possibleConstructorReturn(this, (Scrollchor.__proto__ || Object.getPrototypeOf(Scrollchor)).call(this, props));
+	
+	    _initialiseProps.call(_this);
+	
+	    _this._setup(props);
+	    _this.simulateClick = _this._handleClick;
+	    return _this;
+	  }
+	
+	  _createClass(Scrollchor, [{
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(props) {
+	      this._setup(props);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          to = _props.to,
+	          animate = _props.animate,
+	          beforeAnimate = _props.beforeAnimate,
+	          afterAnimate = _props.afterAnimate,
+	          disableHistory = _props.disableHistory,
+	          props = _objectWithoutProperties(_props, ['to', 'animate', 'beforeAnimate', 'afterAnimate', 'disableHistory']); // eslint-disable-line no-unused-vars
+	
+	      return !this.props.children ? null : _react2.default.createElement('a', _extends({}, props, { href: '#' + this._to, onClick: this._handleClick }));
+	    }
+	  }]);
+	
+	  return Scrollchor;
+	}(_react2.default.Component);
+	
+	// Default easing function
+	// jQuery easing 'swing'
+	
+	
+	Scrollchor.propTypes = {
+	  to: _propTypes2.default.string.isRequired,
+	  animate: _propTypes2.default.shape({
+	    offset: _propTypes2.default.number,
+	    duration: _propTypes2.default.number,
+	    easing: _propTypes2.default.func
+	  }),
+	  beforeAnimate: _propTypes2.default.func,
+	  afterAnimate: _propTypes2.default.func,
+	  disableHistory: _propTypes2.default.bool
+	};
+	
+	var _initialiseProps = function _initialiseProps() {
+	  var _this2 = this;
+	
+	  this._setup = function (props) {
+	    _this2._to = props.to && props.to.replace(/^#/, '') || '';
+	
+	    var _ref = props.animate || {},
+	        _ref$offset = _ref.offset,
+	        offset = _ref$offset === undefined ? 0 : _ref$offset,
+	        _ref$duration = _ref.duration,
+	        duration = _ref$duration === undefined ? 400 : _ref$duration,
+	        _ref$easing = _ref.easing,
+	        easing = _ref$easing === undefined ? easeOutQuad : _ref$easing;
+	
+	    _this2._animate = { offset: offset, duration: duration, easing: easing };
+	    _this2._beforeAnimate = props.beforeAnimate || function () {};
+	    _this2._afterAnimate = props.afterAnimate || function () {};
+	    _this2._disableHistory = props.disableHistory;
+	  };
+	
+	  this._handleClick = function (event) {
+	    _this2._beforeAnimate(event);
+	    event && event.preventDefault();
+	    var id = (0, _utils.animateScroll)(_this2._to, _this2._animate);
+	
+	    if (id) {
+	      _this2._disableHistory || (0, _utils.updateHistory)(id);
+	      _this2._afterAnimate(event);
+	    }
+	  };
+	};
+	
+	exports.default = Scrollchor;
+	function easeOutQuad(x, t, b, c, d) {
+	  return -c * (t /= d) * (t - 2) + b;
+	}
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.animateScroll = animateScroll;
+	exports.updateHistory = updateHistory;
+	
+	var _warning = __webpack_require__(11);
+	
+	var _warning2 = _interopRequireDefault(_warning);
+	
+	var _requestanimationframeTimer = __webpack_require__(261);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function animateScroll(id, animate) {
+	  var element = id ? document.getElementById(id) : document.body;
+	  (0, _warning2.default)(element, 'Cannot find element: #' + id);
+	
+	  if (!element) {
+	    return null;
+	  }
+	
+	  var offset = animate.offset,
+	      duration = animate.duration,
+	      easing = animate.easing;
+	
+	  var start = getScrollTop();
+	  var to = getOffsetTop(element) + offset;
+	  var change = to - start;
+	
+	  function animateFn() {
+	    var elapsedTime = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	
+	    var increment = 20;
+	    var elapsed = elapsedTime + increment;
+	    var position = easing(null, elapsed, start, change, duration);
+	    setScrollTop(position);
+	    elapsed < duration && (0, _requestanimationframeTimer.setTimeout)(function () {
+	      animateFn(elapsed);
+	    }, increment);
+	  }
+	
+	  animateFn();
+	  return id;
+	}
+	
+	function updateHistory(id) {
+	  window.location.hash = id;
+	}
+	
+	function getScrollTop() {
+	  // like jQuery -> $('html, body').scrollTop
+	  return document.documentElement.scrollTop || document.body.scrollTop;
+	}
+	
+	function setScrollTop(position) {
+	  document.documentElement.scrollTop = document.body.scrollTop = position;
+	}
+	
+	function getOffsetTop(element) {
+	  var _element$getBoundingC = element.getBoundingClientRect(),
+	      top = _element$getBoundingC.top;
+	
+	  return top + getScrollTop();
+	}
+
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	module.exports = __webpack_require__(262).default;
+
+/***/ }),
+/* 262 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _raf = __webpack_require__(263);
+	
+	var _raf2 = _interopRequireDefault(_raf);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	var MODE_TIMEOUT = 0;
+	var MODE_INTERVAL = 1;
+	var fnStacks = new Map();
+	var runArray = new Set();
+	var rafStarted = false;
+	var startId = 0;
+	
+	function getTimeStamp() {
+	  return new Date().getTime();
+	}
+	
+	function executeFn(value) {
+	  var fn = value.fn,
+	      args = value.args;
+	
+	  fn.apply(undefined, _toConsumableArray(args));
+	}
+	
+	function runFunction() {
+	  if (runArray.size === 0) return;
+	  runArray.forEach(executeFn);
+	  runArray.clear();
+	}
+	
+	var checkTick = function checkTick(currentTimeTick) {
+	  return function (value, id) {
+	    var nextTick = value.nextTick,
+	        ms = value.ms,
+	        mode = value.mode;
+	
+	    if (currentTimeTick - nextTick >= 0) {
+	      runArray.add(value);
+	      if (mode === MODE_TIMEOUT) {
+	        fnStacks.delete(id);
+	      } else {
+	        fnStacks.set(id, Object.assign({}, value, {
+	          nextTick: nextTick + ms
+	        }));
+	      }
+	    }
+	  };
+	};
+	
+	function loop() {
+	  var currentTimeTick = getTimeStamp();
+	  fnStacks.forEach(checkTick(currentTimeTick));
+	  runFunction();
+	  if (fnStacks.size === 0) {
+	    rafStarted = false;
+	    return;
+	  }
+	  (0, _raf2.default)(loop);
+	}
+	
+	function addId(_ref) {
+	  var fn = _ref.fn,
+	      _ref$ms = _ref.ms,
+	      ms = _ref$ms === undefined ? 0 : _ref$ms,
+	      args = _ref.args,
+	      mode = _ref.mode;
+	
+	  if (!fn) return null;
+	  var currentId = startId;
+	  fnStacks.set(currentId, {
+	    fn: fn,
+	    ms: ms,
+	    nextTick: getTimeStamp() + ms,
+	    args: args,
+	    mode: mode
+	  });
+	  if (!rafStarted) {
+	    rafStarted = true;
+	    (0, _raf2.default)(loop);
+	  }
+	  startId += 1;
+	  return currentId;
+	}
+	
+	function removeId(id) {
+	  if (fnStacks.has(id)) {
+	    fnStacks.delete(id);
+	  }
+	  if (fnStacks.size === 0) {
+	    rafStarted = false;
+	  }
+	}
+	
+	exports.default = {
+	  setTimeout: function setTimeout(fn) {
+	    for (var _len = arguments.length, args = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+	      args[_key - 2] = arguments[_key];
+	    }
+	
+	    var ms = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+	    return addId({ fn: fn, ms: ms, args: args, mode: MODE_TIMEOUT });
+	  },
+	  clearTimeout: removeId,
+	  setInterval: function setInterval(fn) {
+	    for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+	      args[_key2 - 2] = arguments[_key2];
+	    }
+	
+	    var ms = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+	    return addId({ fn: fn, ms: ms, args: args, mode: MODE_INTERVAL });
+	  },
+	  clearInterval: removeId
+	};
+
+/***/ }),
+/* 263 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(264)
+	  , root = typeof window === 'undefined' ? global : window
+	  , vendors = ['moz', 'webkit']
+	  , suffix = 'AnimationFrame'
+	  , raf = root['request' + suffix]
+	  , caf = root['cancel' + suffix] || root['cancelRequest' + suffix]
+	
+	for(var i = 0; !raf && i < vendors.length; i++) {
+	  raf = root[vendors[i] + 'Request' + suffix]
+	  caf = root[vendors[i] + 'Cancel' + suffix]
+	      || root[vendors[i] + 'CancelRequest' + suffix]
+	}
+	
+	// Some versions of FF have rAF but not cAF
+	if(!raf || !caf) {
+	  var last = 0
+	    , id = 0
+	    , queue = []
+	    , frameDuration = 1000 / 60
+	
+	  raf = function(callback) {
+	    if(queue.length === 0) {
+	      var _now = now()
+	        , next = Math.max(0, frameDuration - (_now - last))
+	      last = next + _now
+	      setTimeout(function() {
+	        var cp = queue.slice(0)
+	        // Clear queue here to prevent
+	        // callbacks from appending listeners
+	        // to the current frame's queue
+	        queue.length = 0
+	        for(var i = 0; i < cp.length; i++) {
+	          if(!cp[i].cancelled) {
+	            try{
+	              cp[i].callback(last)
+	            } catch(e) {
+	              setTimeout(function() { throw e }, 0)
+	            }
+	          }
+	        }
+	      }, Math.round(next))
+	    }
+	    queue.push({
+	      handle: ++id,
+	      callback: callback,
+	      cancelled: false
+	    })
+	    return id
+	  }
+	
+	  caf = function(handle) {
+	    for(var i = 0; i < queue.length; i++) {
+	      if(queue[i].handle === handle) {
+	        queue[i].cancelled = true
+	      }
+	    }
+	  }
+	}
+	
+	module.exports = function(fn) {
+	  // Wrap in a new function to prevent
+	  // `cancel` potentially being assigned
+	  // to the native rAF function
+	  return raf.call(root, fn)
+	}
+	module.exports.cancel = function() {
+	  caf.apply(root, arguments)
+	}
+	module.exports.polyfill = function(object) {
+	  if (!object) {
+	    object = root;
+	  }
+	  object.requestAnimationFrame = raf
+	  object.cancelAnimationFrame = caf
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ }),
+/* 264 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.12.2
+	(function() {
+	  var getNanoSeconds, hrtime, loadTime, moduleLoadTime, nodeLoadTime, upTime;
+	
+	  if ((typeof performance !== "undefined" && performance !== null) && performance.now) {
+	    module.exports = function() {
+	      return performance.now();
+	    };
+	  } else if ((typeof process !== "undefined" && process !== null) && process.hrtime) {
+	    module.exports = function() {
+	      return (getNanoSeconds() - nodeLoadTime) / 1e6;
+	    };
+	    hrtime = process.hrtime;
+	    getNanoSeconds = function() {
+	      var hr;
+	      hr = hrtime();
+	      return hr[0] * 1e9 + hr[1];
+	    };
+	    moduleLoadTime = getNanoSeconds();
+	    upTime = process.uptime() * 1e9;
+	    nodeLoadTime = moduleLoadTime - upTime;
+	  } else if (Date.now) {
+	    module.exports = function() {
+	      return Date.now() - loadTime;
+	    };
+	    loadTime = Date.now();
+	  } else {
+	    module.exports = function() {
+	      return new Date().getTime() - loadTime;
+	    };
+	    loadTime = new Date().getTime();
+	  }
+	
+	}).call(this);
+	
+	//# sourceMappingURL=performance-now.js.map
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ })
 /******/ ]);

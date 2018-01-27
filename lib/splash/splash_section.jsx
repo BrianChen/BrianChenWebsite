@@ -2,6 +2,7 @@ import React from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Particles from 'react-particles-js';
 import { particlesConfig } from './particlesjs-config-stars';
+import Scrollchor from 'react-scrollchor';
 
 class SplashSection extends React.Component {
 
@@ -16,7 +17,7 @@ class SplashSection extends React.Component {
           <h2>
             Hello! <i className="em em-rocket rocket-one"></i> <i className="em em-rocket"></i>
           </h2>
-          <h2>I'm <span>Brian Chen</span>, a detail oritented developer with a passion for problem solving. Using my skills to bring ideas to life.</h2>
+          <h2>I'm <span>Brian Chen</span>, a developer with a passion for problem solving. I enjoy learning new technology to bring ideas to life.</h2>
           <h2>I am a             <ReactRotatingText
                         className="rotating-text"
                         items={['Full Stack Developer!', 'Software Engineer!', 'Travel Enthusiast!']}
@@ -24,6 +25,15 @@ class SplashSection extends React.Component {
                         pause={2000}
                       />
           </h2>
+        </div>
+        <div className="learn-more">
+          <Scrollchor
+            to="#about-section"
+            className="scroll-anchor"
+          >
+            <p>Learn more about what I do</p>
+            <i className="fa fa-caret-down" aria-hidden="true"></i>
+          </Scrollchor>
         </div>
         <Particles
           className="particles-wrapper"
