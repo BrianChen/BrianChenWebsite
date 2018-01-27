@@ -12,7 +12,7 @@ class Projects extends React.Component {
 
   render() {
     return(
-      <div className="projects sections">
+      <div id="projects-section" className="projects sections">
         <h1 className="section-title">Bringing Ideas to Life</h1>
         <div className="single-project">
           <a href="http://www.floorsurfing.com">

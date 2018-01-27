@@ -1,4 +1,5 @@
 @import './reset.css';
+@import '../lib/header/header.css';
 @import '../lib/homepage/homepage.css';
 @import '../lib/splash/splash.css';
 @import '../lib/about/about.css';

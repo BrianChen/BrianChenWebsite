@@ -9,12 +9,11 @@ class Header extends React.Component {
   render() {
     return (
       <div id="header">
+        <div className="logo">Brian Chen</div>
         <ul className="header-links">
-          <li>About Me</li>
-          <li>Portfolio</li>
-          <li>Gallery</li>
-          <li>Skills</li>
-          <li>Contact</li>
+          <li><a href="#about-section">About Me</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#gallery-section">Gallery</a></li>
         </ul>
       </div>
     )

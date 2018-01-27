@@ -1,4 +1,7 @@
 import React from 'react';
+import ReactRotatingText from 'react-rotating-text';
+import Particles from 'react-particles-js';
+import { particlesConfig } from './particlesjs-config-stars';
 
 class SplashSection extends React.Component {
 
@@ -8,12 +11,25 @@ class SplashSection extends React.Component {
 
   render() {
     return(
-      <div className="splash-section">
-        <img className="photo" src="http://res.cloudinary.com/dxfjyn0nq/image/upload/v1485902385/Pic_nxhczh.jpg"></img>
+      <div id="splash-section" className="splash-section">
         <div className="splash-text">
-          <h1>Hello, I'm Brian!</h1>
-          <h1 className="splash-description">Software Developer, Electrical Engineer, and travel enthusiast.</h1>
+          <h2>
+            Hello! <i className="em em-rocket rocket-one"></i> <i className="em em-rocket"></i>
+          </h2>
+          <h2>I'm <span>Brian Chen</span>, a detail oritented developer with a passion for problem solving. Using my skills to bring ideas to life.</h2>
+          <h2>I am a             <ReactRotatingText
+                        className="rotating-text"
+                        items={['Full Stack Developer!', 'Software Engineer!', 'Travel Enthusiast!']}
+                        color={'#ffcc66'}
+                        pause={2000}
+                      />
+          </h2>
         </div>
+        <Particles
+          className="particles-wrapper"
+          canvasClassName="particles-canvas"
+          params={particlesConfig}
+        />
       </div>
     )
   }

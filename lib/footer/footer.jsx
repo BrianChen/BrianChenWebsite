@@ -8,7 +8,7 @@ class Footer extends React.Component {
 
   render() {
     return(
-      <div id="footer" className="sections">
+      <div id="footer-section" className="sections">
         <h1 className="section-title">Let's get in touch!</h1>
         <div className="footer-links">
           <a href="https://www.linkedin.com/in/brian-chen-b49a4553">

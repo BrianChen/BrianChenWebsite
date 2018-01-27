@@ -14,12 +14,15 @@ class Homepage extends React.Component {
 
   render() {
     return (
-      <div id="content">
-        <SplashSection/>
-        <About/>
-        <Projects/>
-        <Gallery/>
-        <Footer/>
+      <div className="page">
+        {/* <Header/> */}
+        <div id="content">
+          <SplashSection/>
+          <About/>
+          <Projects/>
+          <Gallery/>
+          <Footer/>
+        </div>
       </div>
     );
   }

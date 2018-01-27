@@ -35,7 +35,7 @@ class Gallery extends React.Component {
 
   render() {
     return (
-      <div id="gallery" className="sections">
+      <div id="gallery-section" className="sections">
         <h1 className="section-title">Explore, Discover and Learn</h1>
         <div className="imgs-container">
           {this.setImages()}
