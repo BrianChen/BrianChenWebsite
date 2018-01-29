@@ -21737,7 +21737,7 @@
 	              null,
 	              'Brian Chen'
 	            ),
-	            ', a developer with a passion for problem solving. I enjoy learning new technology to bring ideas to life.'
+	            ', a developer with a passion for problem solving. I enjoy learning new technologies to bring ideas to life.'
 	          ),
 	          _react2.default.createElement(
 	            'h2',
@@ -23182,7 +23182,7 @@
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "I enjoy working on challenging projects that gives me a chance to use what I have learned as well as diving into new technologies. I have developed applications that utilizes technologies such as Ruby on Rails, React-Redux, React Native and different databases. Some of these projects are shown below."
+	            "I am currently working as a Full Stack Developer.  I enjoy working on challenging projects that gives me a chance to use what I have learned as well as diving into new technologies. I have developed applications that utilizes technologies such as Ruby on Rails, React-Redux, React Native and different databases."
 	          )
 	        )
 	      );

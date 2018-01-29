@@ -17,7 +17,7 @@ class SplashSection extends React.Component {
           <h2>
             Hello! <i className="em em-rocket rocket-one"></i> <i className="em em-rocket"></i>
           </h2>
-          <h2>I'm <span>Brian Chen</span>, a developer with a passion for problem solving. I enjoy learning new technology to bring ideas to life.</h2>
+          <h2>I'm <span>Brian Chen</span>, a developer with a passion for problem solving. I enjoy learning new technologies to bring ideas to life.</h2>
           <h2>I am a             <ReactRotatingText
                         className="rotating-text"
                         items={['Full Stack Developer!', 'Software Engineer!', 'Travel Enthusiast!']}
